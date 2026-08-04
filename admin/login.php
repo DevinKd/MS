@@ -35,13 +35,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         } catch (PDOException $e) {
             // 数据库错误时返回通用提示，不暴露细节
-            $message = '用户名或密码错误1';
+            $message = '数据库错误，请稍后重试';
             $messageType = 'error';
         }
 
         // 验证失败
         if (!isset($_SESSION['admin_logged_in'])) {
-            $message = '用户名或密码错误2';
+            $message = '用户名或密码错误';
             $messageType = 'error';
         }
     }
