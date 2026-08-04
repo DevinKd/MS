@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['admin_logged_in'] = true;
                 $_SESSION['admin_username'] = $user['username'];
                 $_SESSION['admin_id']    = $user['id'];
-                header('Location: dashboard.php');
+                header('Location: ../page/homepage.php');
                 exit;
             }
         } catch (PDOException $e) {
