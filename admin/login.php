@@ -16,16 +16,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $message = '请输入用户名和密码';
         $messageType = 'error';
     } else {
-        // TODO: 这里替换为实际的认证逻辑
-        // 示例：验证用户名密码
-        if ($username === 'admin' && $password === 'admin123') {
-            session_start();
-            $_SESSION['admin_logged_in'] = true;
-            $_SESSION['admin_username'] = $username;
-            header('Location: dashboard.php');
-            exit;
-        } else {
-            $message = '用户名或密码错误';
+        // 从数据库 account 表验证
+        require_once __DIR__ . '/../config/database.php';
+        $db = getDB('account');
+
+        try {
+            $stmt = $db->prepare('SELECT id, username, password FROM account WHERE username = ? LIMIT 1');
+            $stmt->execute([$username]);
+            $user = $stmt->fetch();
+
+            if ($user && $password === $user['password']) {
+                session_start();
+                $_SESSION['admin_logged_in'] = true;
+                $_SESSION['admin_username'] = $user['username'];
+                $_SESSION['admin_id']    = $user['id'];
+                header('Location: dashboard.php');
+                exit;
+            }
+        } catch (PDOException $e) {
+            // 数据库错误时返回通用提示，不暴露细节
+            $message = '用户名或密码错误1';
+            $messageType = 'error';
+        }
+
+        // 验证失败
+        if (!isset($_SESSION['admin_logged_in'])) {
+            $message = '用户名或密码错误2';
             $messageType = 'error';
         }
     }
