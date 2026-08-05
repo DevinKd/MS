@@ -35,6 +35,45 @@
     object-fit: contain;
 }
 
+/* 左侧按钮组（用于放多个按钮） */
+.nav-buttons-left {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Project 按钮 */
+.project-box {
+    padding: 6px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 2px dashed rgba(236, 72, 153, 0.5);
+    border-radius: 18px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.project-box:hover {
+    border-color: rgba(236, 72, 153, 0.8);
+    box-shadow: 0 0 16px rgba(236, 72, 153, 0.2);
+}
+
+.nav-project-link {
+    padding: 8px 24px;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav-project-link:hover {
+    color: #fbcfe8 !important;
+}
+
 /* 登录信息区 */
 .nav-user {
     display: flex;

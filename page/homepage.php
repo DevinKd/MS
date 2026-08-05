@@ -95,14 +95,10 @@ if ($isLoggedIn) {
                     </div>
                 </div>
             </div>
-        <?php else: ?>
-            <!-- 未登录：显示登录引导 -->
-            <div class="not-logged-in">
-                <h1>👋 欢迎回来！</h1>
-                <p>登录您的事务管理系统，开始管理您的财务事务</p>
-                <a href="../admin/login.php" class="btn-login-main">立即登录</a>
-            </div>
-        <?php endif; ?>
+        <?php else:
+            // 未登录：显示未授权页面
+            require_once __DIR__ . '/../admin/not_login.php';
+        endif; ?>
 
     </div>
 

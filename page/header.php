@@ -44,6 +44,12 @@ if (!isset($userInfo)) {
         事务管理系统
     </div>
 
+    <div class="nav-buttons-left">
+        <div class="project-box">
+            <a href="project.php" class="nav-project-link">Project</a>
+        </div>
+    </div>
+
     <?php if ($isLoggedIn): ?>
         <!-- 已登录：显示用户信息 -->
         <div class="nav-user">
