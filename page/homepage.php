@@ -46,7 +46,6 @@ if ($isLoggedIn) {
             <!-- 已登录：显示个人信息和统计数据 -->
             <div class="welcome-section">
                 <h1>欢迎回来，<?php echo htmlspecialchars($userInfo['username'] ?? '用户'); ?>！</h1>
-                <p>今天是个好日子，来看看你最近的财务情况吧</p>
             </div>
 
             <!-- 统计卡片 -->

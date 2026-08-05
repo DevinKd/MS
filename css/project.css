@@ -12,12 +12,12 @@
 .project-header h1 {
     font-size: 28px;
     font-weight: 700;
-    color: #f1f5f9;
+    color: #000000;
     margin-bottom: 8px;
 }
 
 .project-header p {
-    color: #94a3b8;
+    color: #000000;
     font-size: 14px;
 }
 
@@ -25,7 +25,8 @@
     width: 100%;
     overflow-x: auto;
     border-collapse: collapse;
-    background: rgba(30, 41, 59, 0.6);
+    background: #ffffff;
+    border: 1px solid rgba(100, 116, 139, 0.15);
     border-radius: 16px;
     overflow: hidden;
 }
@@ -38,15 +39,15 @@
 }
 
 .data-table th {
-    background: rgba(15, 23, 42, 0.8);
-    color: #cbd5e1;
+    background: #f8fafc;
+    color: #475569;
     font-weight: 600;
     font-size: 13px;
     letter-spacing: 0.02em;
 }
 
 .data-table td {
-    color: #e2e8f0;
+    color: #1e293b;
     font-size: 14px;
 }
 
@@ -55,7 +56,7 @@
 }
 
 .data-table tr:hover td {
-    background: rgba(59, 130, 246, 0.05);
+    background: #f1f5f9;
 }
 
 .empty-state {

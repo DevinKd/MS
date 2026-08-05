@@ -19,8 +19,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-    color: #e2e8f0;
+    background: url('../images/login.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #334155;
     overflow: auto;
 }
 
@@ -91,16 +92,16 @@ body::before {
 }
 
 .login-card {
-    background: rgba(30, 41, 59, 0.7);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(148, 163, 184, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 24px;
     padding: 48px 40px;
     box-shadow:
-        0 0 0 1px rgba(148, 163, 184, 0.05),
-        0 25px 50px -12px rgba(0, 0, 0, 0.4),
-        0 0 80px -20px rgba(59, 130, 246, 0.1);
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        0 25px 50px -12px rgba(0, 0, 0, 0.1),
+        0 0 80px -20px rgba(59, 130, 246, 0.05);
     animation: cardAppear 0.6s ease-out;
 }
 
@@ -140,14 +141,14 @@ body::before {
 .login-header h1 {
     font-size: 24px;
     font-weight: 700;
-    color: #f1f5f9;
+    color: #000000;
     margin-bottom: 8px;
     letter-spacing: -0.02em;
 }
 
 .login-header p {
     font-size: 14px;
-    color: #94a3b8;
+    color: #000000;
 }
 
 /* ========== Alert Message ========== */
@@ -213,17 +214,17 @@ body::before {
 .form-input {
     width: 100%;
     padding: 14px 16px 14px 46px;
-    background: rgba(15, 23, 42, 0.6);
+    background: #ffffff;
     border: 1.5px solid rgba(100, 116, 139, 0.25);
     border-radius: 14px;
     font-size: 15px;
-    color: #e2e8f0;
+    color: #334155;
     outline: none;
     transition: all 0.3s ease;
 }
 
 .form-input::placeholder {
-    color: #475569;
+    color: #94a3b8;
 }
 
 .form-input:hover {
@@ -233,7 +234,7 @@ body::before {
 .form-input:focus {
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
-    background: rgba(15, 23, 42, 0.8);
+    background: #ffffff;
 }
 
 /* Password toggle */
@@ -304,11 +305,11 @@ body::before {
 }
 
 .checkbox-wrapper span {
-    color: #94a3b8;
+    color: #000000;
 }
 
 .forgot-link {
-    color: #60a5fa;
+    color: #000000;
     text-decoration: none;
     transition: color 0.2s;
 }
