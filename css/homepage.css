@@ -118,8 +118,11 @@
 /* ========== 主内容区 ========== */
 .main-content {
     padding: 96px 32px 60px;
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 24px;
+    margin: 20px auto;
 }
 
 /* 欢迎区域 */
