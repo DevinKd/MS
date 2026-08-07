@@ -40,7 +40,7 @@ if (!isset($userInfo)) {
 <!-- 顶部导航栏 -->
 <nav class="navbar">
     <div class="nav-logo">
-        <img src="../images/logo.jpg" alt="Logo">
+        <img src="../images/management.png" alt="Logo">
         事务管理系统
     </div>
 

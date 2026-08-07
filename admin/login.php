@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <!-- Header -->
             <div class="login-header">
-                <div class="login-logo"><img src="../images/logo.jpg" alt="Logo"></div>
+                <div class="login-logo"><img src="../images/management.png" alt="Logo"></div>
                 <h1>事务管理系统</h1>
                 <p>登录以继续</p>
             </div>
