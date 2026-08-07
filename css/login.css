@@ -19,8 +19,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('../images/login.png') no-repeat center center fixed;
-    background-size: cover;
+    background: #ffffff;
     color: #334155;
     overflow: auto;
 }
